@@ -72,15 +72,18 @@
             });
         }
 
-        var j = 0;
+        //var j = 0;
+        
 
-        for (var i = 0; i < marker.length; i++) {
-            naver.maps.Event.addListener(marker[i], 'click', function (e) {
-                console.log('marker' + j);
-                j++;
-                location.href = "http://www.naver.com";
+        <% for (var i = 0; i < shops.length; i++) { %>
+            naver.maps.Event.addListener(marker[<%= i %>], 'click', function (e) {
+                console.log('marker' + <%= i %>);
+                location.href = "/detail/" + <%= i %>;
+                //j++;
+                //var marker_id = i+1;
+                //marker_id = marker_id.toString();
             });
-        }
+        <% } %>
 
     </script>
 
