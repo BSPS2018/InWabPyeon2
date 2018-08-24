@@ -11,11 +11,11 @@ app.listen(3000, () => {
 })
 
 app.get('/', (req, res) => {
-    res.render('index.ejs', { num: 1 })
+    res.render('index.ejs', { lng: 37.548243, lat: 126.942779 })
 })
-
+//37.548243, 126.942779
 app.get('/:lng/:lat', (req, res) => {
-    res.render('index.ejs', { num: 3 })
+    res.render('index.ejs', { lng: req.params.lng, lat: req.params.lat })
     //res.send('lng: ' + req.params.lng + ' lat: ' + req.params.lat)
 })
 

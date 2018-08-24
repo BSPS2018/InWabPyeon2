@@ -18,7 +18,6 @@
         <input name="lat" type="text">
         <input type="submit">
     </form>
-    <div><%= num %></div>
     <div id="map" style="width:100%;height:400px;"></div>
 
 
@@ -33,7 +32,7 @@
         var marker = [];
 
         var map = new naver.maps.Map(document.getElementById('map'), {
-            center: new naver.maps.LatLng(37.548185, 126.944841),
+            center: new naver.maps.LatLng(<%= lng %>, <%= lat %>),
             zoom: 10
         });
 
@@ -53,7 +52,7 @@
                 location.href = "http://www.naver.com";
             });
         }
-        console.log(<%= num %>)
+        
     </script>
 
 </body>
