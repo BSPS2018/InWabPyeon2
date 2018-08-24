@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <a href="/"><div>logo</div></a>
     <form method="POST" action="/">
         <span>위도: </span>
         <input name="lng" type="text">
@@ -17,6 +18,7 @@
         <input name="lat" type="text">
         <input type="submit">
     </form>
+    <div><%= num %></div>
     <div id="map" style="width:100%;height:400px;"></div>
 
 
@@ -25,12 +27,12 @@
 
 
 
-    <!--<script type='text/javascript' src='./main.js' />-->
+    <!--<script type='text/javascript' src='/test.js' />-->
     <script>
         var coords = [[37.550052, 126.948596], [37.548874, 126.937134], [37.550958, 126.940911]];
         var marker = [];
 
-        var map = new naver.maps.Map('map', {
+        var map = new naver.maps.Map(document.getElementById('map'), {
             center: new naver.maps.LatLng(37.548185, 126.944841),
             zoom: 10
         });
@@ -51,6 +53,7 @@
                 location.href = "http://www.naver.com";
             });
         }
+        console.log(<%= num %>)
     </script>
 
 </body>
