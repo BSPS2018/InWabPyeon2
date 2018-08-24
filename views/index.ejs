@@ -28,13 +28,24 @@
 
     <!--<script type='text/javascript' src='/test.js' />-->
     <script>
-        var coords = [[37.550052, 126.948596], [37.548874, 126.937134], [37.550958, 126.940911]];
+        //var coords = [[37.550052, 126.948596], [37.548874, 126.937134], [37.550958, 126.940911]];
+        var coords = [[0,0],[0,0],[0,0],[0,0],[0,0]];
         var marker = [];
+        
 
         var map = new naver.maps.Map(document.getElementById('map'), {
             center: new naver.maps.LatLng(<%= lng %>, <%= lat %>),
             zoom: 10
         });
+
+        var k=0;
+        <% for(var i=0; i<shops.length; i++) { %>
+            coords[k][0] = <%= shops[i].lng %>;
+            coords[k][1] = <%= shops[i].lat %>;
+            k++;
+        <% } %>
+
+        //console.log(testcoords[0][0])
 
         for (var i = 0; i < coords.length; i++) {
             marker[i] = new naver.maps.Marker({
