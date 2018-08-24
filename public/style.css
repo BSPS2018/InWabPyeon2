@@ -1,0 +1,72 @@
+body{
+    height: 100%;
+
+    /* The image used */
+    background-image: url("");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.txt0{ font-size:14px; color:#555; line-height:24px; font-weight:bold;}
+
+
+.logo {
+  color:black;
+}
+
+#map {
+  margin: 0 auto;
+  margin-top: 15px;
+
+  width: 80%;
+  height: 500px;
+
+  border:0px solid black;
+}
+
+.form-container {
+  width: 500px auto;
+  height: 60px auto;
+  margin: 0 auto;
+  border : 0px solid black;
+  border-radius: 10px;
+}
+
+input[type=text]{
+
+  width: 100px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid green;
+
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;}
+
+p{
+  font-family: 'Nanum Brush Script', cursive;
+  font-size:56px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+header {
+  margin: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
