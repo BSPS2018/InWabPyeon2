@@ -19,7 +19,7 @@ const shops = [
             public: 1,
             findChild: 1,
             laundry: 1,
-            usedPhone: 1,
+            usedPhone: 0,
             document: 1,
             print: 1,
             flight: 1
@@ -32,10 +32,10 @@ const shops = [
         name: 'b',
         services: {
             delivery: 1,
-            public: 1,
+            public: 0,
             findChild: 1,
             laundry: 1,
-            usedPhone: 1,
+            usedPhone: 0,
             document: 1,
             print: 1,
             flight: 1
@@ -47,14 +47,14 @@ const shops = [
         lat: 126.937180,
         name: 'c',
         services: {
-            delivery: 1,
-            public: 1,
+            delivery: 0,
+            public: 0,
             findChild: 1,
             laundry: 1,
             usedPhone: 1,
             document: 1,
             print: 1,
-            flight: 1
+            flight: 0
         }
     },
     {
@@ -66,7 +66,7 @@ const shops = [
             delivery: 1,
             public: 1,
             findChild: 1,
-            laundry: 1,
+            laundry: 0,
             usedPhone: 1,
             document: 1,
             print: 1,
@@ -74,18 +74,18 @@ const shops = [
         }
     },
     {
-        id: 5,
+        id: 0,
         lng: 37.549751,
         lat: 126.943180,
         name: 'e',
         services: {
-            delivery: 1,
-            public: 1,
-            findChild: 1,
-            laundry: 1,
+            delivery: 0,
+            public: 0,
+            findChild: 0,
+            laundry: 0,
             usedPhone: 1,
             document: 1,
-            print: 1,
+            print: 0,
             flight: 1
         }
     }
