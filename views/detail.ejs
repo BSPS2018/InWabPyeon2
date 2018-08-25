@@ -42,17 +42,38 @@
 <div class="main">
 <% for(var i=0; i<products.length; i++) { %>
     <div class="card">
-        <h1><%= products[i].name %></h1>
+        <h1>
+        <% if(products[i].event==1) { %>
+          <%= products[i].name %>&nbsp;<span style="color:red;"><u>PB</u></span>
+        <% } else if(products[i].event==2) { %>
+          <%= products[i].name %>&nbsp;<span style="color:blue;"><u>2+1</u></span>
+        <% } else if(products[i].event==3) { %>
+          <%= products[i].name %>&nbsp;<span style="color:green;"><u>유통기한임박</u></span>
+        <% } else { %>
+          <%= products[i].name %>
+
+        <% } %>
+        </h1>
         <img src="<%=products[i].url%>">
 
         <div class="info">
-            <h2>재고: <%= products[i].stock %></h2>
+            <h2>
+              <% if(products[i].stock < 2) { %>
+
+              재고: <%= products[i].stock %>&nbsp;<span style="color:red;"><b>급함!</b></span>
+              <% } else { %>
+                재고: <%= products[i].stock %>&nbsp;<span style="color:orange">여유:)</span>
+              <% } %>
+            </h2>
             <h2>평점: <%= products[i].rate %></h2>
         </div>
 
     </div>
 <% } %>
 </div>
+
+
+
 
 
 </body>

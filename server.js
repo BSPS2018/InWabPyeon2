@@ -103,7 +103,8 @@ const products = [
         name: '오모리 김치찌개',
         stock: 4,
         rate: 3.5,
-        url: "https://www.ktown1st.com/uploads/images/smarteditor/2018/04/23/8da171781c9a9a63d63edbcf4a5deb9c.JPG"
+        url: "https://www.ktown1st.com/uploads/images/smarteditor/2018/04/23/8da171781c9a9a63d63edbcf4a5deb9c.JPG",
+        event : 1
     },
     {
         id: 2,
@@ -111,7 +112,8 @@ const products = [
         name: '식빵',
         stock: 4,
         rate: 5,
-        url: "http://cphoto.asiae.co.kr/listimglink/4/2015091008215927146_1.jpg"
+        url: "http://cphoto.asiae.co.kr/listimglink/4/2015091008215927146_1.jpg",
+        event : 0
     },
     {
         id: 4,
@@ -119,15 +121,17 @@ const products = [
         name: '치킨',
         stock: 4,
         rate: 1.5,
-        url: "http://img.insight.co.kr/static/2017/04/05/700/EG4DS97M0NH44JP7EAT5.jpg"
+        url: "http://img.insight.co.kr/static/2017/04/05/700/EG4DS97M0NH44JP7EAT5.jpg",
+        event : 1
     },
     {
         id: 3,
         shop: 1,
         name: '핫도그',
-        stock: 4,
+        stock: 1,
         rate: 3,
-        url: "https://t1.daumcdn.net/cfile/tistory/2153BD4553B6275B1F"
+        url: "https://t1.daumcdn.net/cfile/tistory/2153BD4553B6275B1F",
+        event : 2
     },
     {
         id: 3,
@@ -135,7 +139,8 @@ const products = [
         name: '피자',
         stock: 4,
         rate: 3,
-        url: "https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory&fname=http%3A%2F%2Fcfile30.uf.tistory.com%2Fimage%2F25048C3B55DA502D3A2E85"
+        url: "https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory&fname=http%3A%2F%2Fcfile30.uf.tistory.com%2Fimage%2F25048C3B55DA502D3A2E85",
+        event : 3
     },
     {
         id: 3,
@@ -143,7 +148,8 @@ const products = [
         name: '육각김밥',
         stock: 4,
         rate: 3,
-        url: "/hexa_gimbab.png"
+        url: "/hexa_gimbab.png",
+        event : 0
     }
 ]
 
