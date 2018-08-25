@@ -43,6 +43,7 @@
     name: '오모리 김치찌게',
     stock: 4,
     rate: 3.5,
-    url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
+    url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677",
+    event : 1
 }
 ```
