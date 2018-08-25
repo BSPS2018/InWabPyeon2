@@ -4,12 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+
+
+    <header>
+    <a href="/" target="_top"><img src="/BSPS.jpg" style="width:80px;"></a>
+
+    <h1><p align="center">인.완.편</p></h1>
+
+    <i class="fas fa-3x fa-bars"></i>
+  </header>
+
+
+<div class="shop-wrapper">
+<div class="shop-basic">
+    <img src="https://ppss.kr/wp-content/uploads/2017/12/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-23.jpg">
+    주소: 00로 000-000
+    대표: 홍길동
+</div>
+<div class="shop-info">
+    <p>택배: <% if(!shop.services.delivery) {%>불<% } %>가능</p>
+    <p>공공서비스(세금납부): <% if(!shop.services.public) {%>불<% } %>가능</p>
+    <p>미아찾기: <% if(!shop.services.findChild) {%>불<% } %>가능</p>
+    <p>세탁: <% if(!shop.services.laundry) {%>불<% } %>가능</p>
+    <p>중고폰 거래: <% if(!shop.services.usedPhone) {%>불<% } %>가능</p>
+    <p>공식문서: <% if(!shop.services.document) {%>불<% } %>가능</p>
+    <p>복사/출력: <% if(!shop.services.print) {%>불<% } %>가능</p>
+    <p>항공권 발매: <% if(!shop.services.flight) {%>불<% } %>가능</p>
+</div>
+</div>
+
+<div class="main">
 <% for(var i=0; i<products.length; i++) { %>
-    <p><%= products[i].name %></p>
+    <div class="card">
+        <h1><%= products[i].name %></h1>
+        <img src="https://ppss.kr/wp-content/uploads/2017/12/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-23.jpg">
+
+        <div class="info">
+            <h2>재고: <%= products[i].stock %></h2>
+            <h2>평점: <%= products[i].rate %></h2>
+        </div>
+        
+    </div>
 <% } %>
+</div>
+
     
 </body>
 </html>

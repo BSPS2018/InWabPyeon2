@@ -13,31 +13,81 @@ const shops = [
         id: 1,
         lng: 37.549472,
         lat: 126.946110,
-        name: 'a'
+        name: 'a',
+        services: {
+            delivery: 0,
+            public: 1,
+            findChild: 1,
+            laundry: 1,
+            usedPhone: 1,
+            document: 1,
+            print: 1,
+            flight: 1
+        }
     },
     {
         id: 2,
         lng: 37.552047,
         lat: 126.936959,
-        name: 'b'
+        name: 'b',
+        services: {
+            delivery: 1,
+            public: 1,
+            findChild: 1,
+            laundry: 1,
+            usedPhone: 1,
+            document: 1,
+            print: 1,
+            flight: 1
+        }
     },
     {
         id: 3,
         lng: 37.550542,
         lat: 126.937180,
-        name: 'c'
+        name: 'c',
+        services: {
+            delivery: 1,
+            public: 1,
+            findChild: 1,
+            laundry: 1,
+            usedPhone: 1,
+            document: 1,
+            print: 1,
+            flight: 1
+        }
     },
     {
         id: 4,
         lng: 37.549198,
         lat: 126.937770,
-        name: 'd'
+        name: 'd',
+        services: {
+            delivery: 1,
+            public: 1,
+            findChild: 1,
+            laundry: 1,
+            usedPhone: 1,
+            document: 1,
+            print: 1,
+            flight: 1
+        }
     },
     {
         id: 5,
         lng: 37.549751,
         lat: 126.943180,
-        name: 'e'
+        name: 'e',
+        services: {
+            delivery: 1,
+            public: 1,
+            findChild: 1,
+            laundry: 1,
+            usedPhone: 1,
+            document: 1,
+            print: 1,
+            flight: 1
+        }
     }
 ]
 
@@ -47,28 +97,104 @@ const products = [
         shop: 1,
         name: '오모리 김치찌게',
         stock: 4,
-        rate: 3.5
+        rate: 3.5,
+        url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
     },
     {
         id: 2,
         shop: 2,
         name: '식빵',
         stock: 4,
-        rate: 5
+        rate: 5,
+        url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
     },
     {
         id: 3,
         shop: 1,
         name: '삼각김밥',
         stock: 4,
-        rate: 3
+        rate: 3,
+        url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
     },
     {
         id: 4,
         shop: 4,
         name: '치킨',
         stock: 4,
-        rate: 1.5
+        rate: 1.5,
+        url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
+    },
+    {
+        id: 3,
+        shop: 1,
+        name: '팝콘',
+        stock: 4,
+        rate: 3,
+        url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
+    },
+    {
+        id: 3,
+        shop: 1,
+        name: '핫도그',
+        stock: 4,
+        rate: 3,
+        url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
+    },
+    {
+        id: 3,
+        shop: 1,
+        name: '불닭',
+        stock: 4,
+        rate: 3,
+        url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
+    },
+    {
+        id: 3,
+        shop: 1,
+        name: '족발',
+        stock: 4,
+        rate: 3,
+        url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
+    },
+    {
+        id: 3,
+        shop: 1,
+        name: '피자',
+        stock: 4,
+        rate: 3,
+        url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
+    },
+    {
+        id: 3,
+        shop: 1,
+        name: '음료수',
+        stock: 4,
+        rate: 3,
+        url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
+    },
+    {
+        id: 3,
+        shop: 1,
+        name: '그냥김밥',
+        stock: 4,
+        rate: 3,
+        url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
+    },
+    {
+        id: 3,
+        shop: 1,
+        name: '오각김밥',
+        stock: 4,
+        rate: 3,
+        url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
+    },
+    {
+        id: 3,
+        shop: 1,
+        name: '육각김밥',
+        stock: 4,
+        rate: 3,
+        url: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjR8Z6dpofdAhVSUN4KHS7vBIcQjRx6BAgBEAU&url=https%3A%2F%2Fppss.kr%2Farchives%2F145580&psig=AOvVaw1YCwL5lFXpNj3glIr40oLl&ust=1535255409878677"
     }
 ]
 
@@ -96,5 +222,10 @@ app.get('/search/:lng/:lat', (req, res) => {
 
 app.get('/detail/:id', (req, res) => {
     filtered_products = products.filter(product => product.shop == req.params.id)
-    res.render('detail.ejs', { products: filtered_products })
+    currShop = shops.filter(shop => shop.id == req.params.id)
+    res.render('detail.ejs', { products: filtered_products, shop: currShop[0] })
+})
+
+app.get('/about', (req, res) => {
+    res.render('about.ejs')
 })
