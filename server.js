@@ -11,8 +11,8 @@ const app = express()
 const shops = [
     {
         id: 1,
-        lng: 37.549472,
-        lat: 126.946110,
+        lng: 37.550116,
+        lat: 126.943930,
         name: 'a',
         url : "https://en.smartcity.org.tw/images/blog/Industry%20News/7-11.jpg",
         services: {
@@ -28,8 +28,8 @@ const shops = [
     },
     {
         id: 2,
-        lng: 37.552047,
-        lat: 126.936959,
+        lng: 37.548023,
+        lat: 126.941892,
         name: 'b',
         url : "https://en.smartcity.org.tw/images/blog/Industry%20News/7-11.jpg",
         services: {
@@ -45,8 +45,8 @@ const shops = [
     },
     {
         id: 3,
-        lng: 37.550542,
-        lat: 126.937180,
+        lng: 37.548823,
+        lat: 126.939467,
         name: 'c',
         url : "https://en.smartcity.org.tw/images/blog/Industry%20News/7-11.jpg",
         services: {
@@ -62,8 +62,8 @@ const shops = [
     },
     {
         id: 4,
-        lng: 37.549198,
-        lat: 126.937770,
+        lng: 37.550227,
+        lat: 126.936077,
         name: 'd',
         url : "http://res.cloudinary.com/aceshinek/image/upload/c_fit,f_auto,h_420,w_600/v1515630656/w0mftxrtcmrme1h51uuv.jpg",
         services: {
@@ -79,8 +79,8 @@ const shops = [
     },
     {
         id: 0,
-        lng: 37.549751,
-        lat: 126.943180,
+        lng: 37.553127,
+        lat: 126.937448,
         name: 'e',
         url : "http://cphoto.asiae.co.kr/listimglink/4/2017101211004501330_2.jpg",
         services: {
